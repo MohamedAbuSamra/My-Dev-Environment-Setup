@@ -5,7 +5,7 @@ This repository contains two key configurations I use to boost my development wo
 ## 🛠️ 1. Zsh Customization
 A script that sets up and styles my Zsh shell environment, including themes, aliases, and plugin setup (like `zsh-autosuggestions`, `powerlevel10k`, etc.).
 
-## 💻 2. VS Code Snippets
+## 💻 2. VS Code Snippets(most snippets are shared online per vs code clouds so that mostly will be ingored on lng terms runs)
 A collection of custom VS Code snippets I use for file templates across my projects — saves time and keeps things consistent.
 
 I will add more as long i need croos platforms tools and multi. editors
