@@ -4,6 +4,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/flutter/bin"
+export FZF_DEFAULT_COMMAND='fd --type f'
 
 # --- NVM ---
 export NVM_DIR="$HOME/.nvm"
@@ -43,11 +44,16 @@ unset __conda_setup
 
 # --- PYENV ---
 eval "$(pyenv init -)"
-# --- ZSH AUTOCOMPLETE & HELPERS ---
-autoload -Uz compinit && compinit  # enables autocomplete system
+
+
+# --- AUTOCOMPLETE SYSTEM ---
+autoload -Uz compinit && compinit
 
 # --- AUTOSUGGESTIONS ---
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # --- SYNTAX HIGHLIGHTING ---
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# --- FZF BINDINGS ---
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
